@@ -25,6 +25,7 @@ internal static void ReverseString(string str)
     string reversedstring = new string(charArray);  
     Console.WriteLine(reversedstring);  
 } 
+    
     Q.2: How to find if the given string is a palindrome or not?
 Ans.: The user will input a string and we need to print “Palindrome” or “Not Palindrome” based on whether the input string is a palindrome or not.
 
@@ -54,6 +55,7 @@ internal static void chkPalindrome(string str)
      else  
          Console.WriteLine("Not Palindrome");  
  }  
+ 
     Q.3: How to reverse the order of words in a given string?
 Ans.: The user will input a sentence and we need to reverse the sequence of words in the sentence.
 
@@ -88,6 +90,7 @@ internal static void ReverseWordOrder(string str)
     }  
     Console.WriteLine(reverseSentence.ToString());  
 }  
+    
     Q.4: How to reverse each word in a given string?
 Ans.: The user will input a sentence and we need to reverse each word individually without changing its position in the sentence.
 
@@ -114,6 +117,7 @@ internal static void ReverseWords(string str)
      }  
      Console.WriteLine(output.ToString());  
  }  
+    
     Q.5: How to count the occurrence of each character in a string?
 Ans.: The user will input a string and we need to find the count of each character of the string and display it on console. We won’t be counting space character.
 
@@ -156,6 +160,7 @@ internal static void Countcharacter(string str)
         Console.WriteLine("{0} - {1}", character.Key, character.Value);  
     }  
 }  
+    
     Q.6: How to remove duplicate characters from a string?
 Ans.: The user will input a string and the method should remove multiple occurrences of characters in the string
 
@@ -173,6 +178,7 @@ internal static void removeduplicate(string str)
      }  
      Console.WriteLine(result);  
  }  
+    
     Q.7: How to find all possible substring of a given string?
 Ans.: This is a very frequent interview question. Here we need to form all the possible substrings from input string, varying from length 1 to the input string length. The output will include the input string also.
 
@@ -189,6 +195,7 @@ internal static void findallsubstring(string str)
          }  
      }  
  }
+    
     Q.8: How to perform Left circular rotation of an array?
 Ans.: The user will input an integer array and the method should shift each element of input array to its Left by one position in circular fashion. The logic is to iterate loop from Length-1 to 0 and swap each element with last element.
 
@@ -209,6 +216,7 @@ internal static void RotateLeft(int[] array)
          Console.Write(num + " ");  
      }  
  }
+    
     Q.9: How to perform Right circular rotation of an array?
 Ans: The user will input an integer array and the method should shift each element of input array to its Right by one position in circular fashion. The logic is to iterate loop from 0 to Length-1 and swap each element with first element
 
@@ -228,6 +236,7 @@ internal static void RotateRight(int[] array)
         Console.Write(num + " ");  
     }  
 } 
+    
     Q.10: How to find if a positive integer is a prime number or not?
 Ans.: The user will input a positive integer and the method should output “Prime” or “Not Prime” based on whether the input integer is a prime number or not.
 
@@ -265,6 +274,7 @@ internal static bool FindPrime(int number)
   
       return true;  
   }  
+    
     Q.11: How to find the sum of digits of a positive integer?
 Ans.: The user will input a positive integer and the method should return the sum of all the digits in that integer.
 
@@ -279,6 +289,7 @@ internal static void SumOfDigits(int num)
     }  
     Console.WriteLine(sum);  
 }  
+    
     Q.12: How to find second largest integer in an array using only one loop?
 Ans.: The user will input an unsorted integer array and the method should find the second largest integer in the array.
 
@@ -301,6 +312,7 @@ internal static void FindSecondLargeInArray(int[] arr)
     }  
     Console.WriteLine(max2); ;  
 } 
+    
     Q.13: How to find third largest integer in an array using only one loop?
 Ans.: The user will input an unsorted integer array and the method should find the third largest integer in the array.
 
@@ -331,6 +343,7 @@ internal static void FindthirdLargeInArray(int[] arr)
     }    
     Console.WriteLine(max3); ;    
 }   
+    
     Q.14: How to convert a two-dimensional array to a one-dimensional array?
 Ans.: The user will input a 2-D array (matrix) and we need to convert it to a 1-D array. We will create 1-D array column wise.
 
@@ -361,6 +374,7 @@ for (int x = 0; x < width; x++ )
          index++;    
      }    
  }
+    
     Q.15: How to convert a one-dimensional array to a two-dimensional array?
 Ans.: The user will input 1-D array along with the number of rows and columns. The method should convert this 1-D array to a 2-D array(matrix) of given row and column. We will create matrix row wise.
 
@@ -385,6 +399,7 @@ internal static void SingleToMulti(int[] array, int row, int column)
          Console.WriteLine();  
      }  
  }  
+    
     Q.16: How to find the angle between hour and minute hands of a clock at any given time?
 Ans.: The user will input hour and minute of the time and the method should give the angle between the hour hand and minute hand at that given time.
 
@@ -406,6 +421,7 @@ internal static void FindAngleinTime(int hours, int mins)
     
      Console.WriteLine("The angle between hour hand and minute hand is {0} degrees", diff);      
  }  
+    
     Q.17: Explain Bubble Sort Algorithm In C#
 This algorithm follows the concept of iterating through the array from the first index to the last index and comparing adjacent elements and then swapping them if they appear in the wrong order. i.e. If the next element is smaller than the current element, they are swapped.
 
@@ -413,6 +429,7 @@ Time Complexity of bubble sort is O(n²).
 
 Read Bubble Sort Algorithm In C# to learn more.
 
+    
     Q.18: Explain Quick Sort Algorithm In C#
 This Algorithm selects an element as pivot element from the given array and partitions the array around it such that, Left side of pivot contains all the elements that are less than the pivot element. The right side contains all elements that are greater than the pivot element. Let P be the index of pivot after partitioning the array. Then, the left subarray(start to P-1) and right subarray(P+1 to end) are sorted recursively to get the final sorted array as output.
 
@@ -420,6 +437,7 @@ The worst case time complexity of this algorithm is O(N²). The best case and av
 
 Read Quick Sort Algorithm In C# to learn more.
 
+    
     Q.19: Explain Merge Sort Algorithm In C#
 This algorithm works as follows.
 
@@ -430,6 +448,7 @@ In all the three cases (worst, average, best), the time complexity of Merge sort
 
 Read Merge Sort Algorithm In C# to learn more.
 
+    
     Q. 20: Explain Insertion Sort Algorithm In C#
 Insertion sort compares the current element with largest value in the sorted array. If the current element is smaller then the algorithm finds its correct position in sorted array and moves the element to that position otherwise if the current element is greater then it leaves the element in its place and moves on to next element.
 
@@ -439,6 +458,7 @@ Every element is compared to every other element of sorted array. Hence complexi
 
 Read Insertion Sort Algorithm In C# to learn more.
 
+    
     Q. 21: Explain Selection Sort Algorithm In C#
 This algorithm follows the concept of dividing the given array into two subarrays.
 
@@ -450,6 +470,7 @@ Read Selection Sort Algorithm In C# to learn more.
 
 Time complexity of Selection Sort as O(n²).
 
+    
     Q. 22: Explain Binary Search In C#
 Binary search is an efficient and commonly used searching algorithm.This algorithm works only on sorted sets of elements. So if the given array is not sorted then we need to sort it before applying Binary search.
 
